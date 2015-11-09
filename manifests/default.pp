@@ -16,6 +16,7 @@ package {[
   'python-dev',
   'python-pip',
   'supervisor',
+  'wget',
   'x11-xkb-utils',
   'x11vnc',
   'xfonts-100dpi',
@@ -51,6 +52,7 @@ exec { '/usr/share/selenium/selenium-server-standalone.jar':
     Package['icedtea-6-plugin'],
     Package['libgdk-pixbuf2.0-common'],
     Package['iceweasel']
+    Package['wget']
   ],
   path => ['/usr/bin']
 }
