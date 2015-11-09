@@ -1,0 +1,24 @@
+{
+  "builders": [
+    {
+      "type": "docker",
+      "image": "debian/7.9",
+      "commit": true
+    }
+  ],
+
+  "provisioners": [
+    {
+      "type": "puppet-masterless",
+      "manifest_file": "manifests/default.pp"
+    }
+  ],
+
+  "post-processors": [
+    {
+      "type": "docker-tag",
+      "repository": "watchow2/recorder",
+      "tag": "0.1"
+    }
+  ]
+}
