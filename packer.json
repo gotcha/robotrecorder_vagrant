@@ -9,6 +9,10 @@
 
   "provisioners": [
     {
+      "type": "shell",
+      "script": "packer-shell-provisioner.sh"
+    },
+    {
       "type": "puppet-masterless",
       "manifest_file": "manifests/default.pp"
     }
