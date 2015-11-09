@@ -51,7 +51,7 @@ exec { '/usr/share/selenium/selenium-server-standalone.jar':
     Package['openjdk-6-jre'],
     Package['icedtea-6-plugin'],
     Package['libgdk-pixbuf2.0-common'],
-    Package['iceweasel']
+    Package['iceweasel'],
     Package['wget']
   ],
   path => ['/usr/bin']
