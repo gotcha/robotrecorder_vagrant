@@ -2,7 +2,7 @@
   "builders": [
     {
       "type": "docker",
-      "image": "debian/7.9",
+      "image": "debian:7.9",
       "commit": true
     }
   ],
