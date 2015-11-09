@@ -93,12 +93,14 @@ exec { 'dos2unix /usr/local/bin/rec-window.py':
   require => Package['dos2unix']
 }
 
+/*
 exec { 'modprobe snd-aloop':
   command => 'sudo modprobe snd-aloop index=0 pcm_substreams=1',
   path => ['/bin', '/usr/bin'],
   onlyif => 'test `sudo lsmod | grep -c snd_aloop` -eq 0',
   require => Package['alsa-utils']
 }
+*/
 
 file { '/etc/modules':
   ensure => 'present',
